@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { PostMeta } from '$lib/utils/posts';
-	import { formatDate } from '$lib/utils/format-date';
+	import type { PostMeta } from '../../utils/posts';
+	import { formatDate } from '../../utils/format-date';
 
 	let { post }: { post: PostMeta } = $props();
 </script>

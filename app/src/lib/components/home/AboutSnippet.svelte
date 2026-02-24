@@ -1,13 +1,14 @@
 <script lang="ts">
-	import ImageWithBorder from '$lib/components/shared/ImageWithBorder.svelte';
-	import Button from '../../../../app/src/lib/components/shared/Button.svelte';
+	import ImageWithBorder from '../shared/ImageWithBorder.svelte';
+	import Button from '../shared/Button.svelte';
+	import selfie from '$lib/assets/selfie1.jpg';
 </script>
 
-<section class="bg-white py-20 dark:bg-surface-dark">
+<section class="bg-surface-light-alt py-20 dark:bg-surface-dark">
 	<div class="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
 		<!-- Photo -->
 		<div class="mx-auto w-full max-w-sm pl-4 pt-4">
-			<ImageWithBorder src="/images/about-photo.jpg" alt="About me" />
+			<ImageWithBorder src={selfie} alt="About me" />
 		</div>
 
 		<!-- Text -->
@@ -27,7 +28,7 @@
 				restless and yearning for fresh and exhilarating experiences.
 			</p>
 			<div class="mt-8">
-				<Button href="/about" variant="outline">Read More</Button>
+				<Button href="/about" variant="primary">Read More</Button>
 			</div>
 		</div>
 	</div>

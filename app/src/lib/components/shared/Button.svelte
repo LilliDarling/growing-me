@@ -7,20 +7,18 @@
 		children
 	}: {
 		href?: string;
-		variant?: 'primary' | 'secondary' | 'outline';
+		variant?: 'primary' | 'secondary';
 		children: Snippet;
 	} = $props();
 
 	const baseClasses =
-		'inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-200';
+		'inline-flex items-center justify-center rounded-full px-4 py-1 text-sm font-semibold transition-all duration-200';
 
 	const variantClasses = {
 		primary:
-			'bg-sage-200 text-sage-900 hover:bg-sage-300 dark:bg-sage-700 dark:text-sage-100 dark:hover:bg-sage-600',
+			'border-2 border-blue-800 bg-blue-300 hover:bg-blue-800 hover:text-white',
 		secondary:
-			'bg-brand text-white hover:bg-brand-light dark:bg-brand-light dark:hover:bg-brand',
-		outline:
-			'border-2 border-sage-300 text-sage-700 hover:bg-sage-50 dark:border-sage-600 dark:text-sage-300 dark:hover:bg-sage-900'
+			'bg-blue-800 text-white hover:bg-blue-300 hover:text-black'
 	};
 </script>
 

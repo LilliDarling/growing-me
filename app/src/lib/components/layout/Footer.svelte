@@ -5,12 +5,12 @@
 </script>
 
 <footer class="bg-surface-light-alt dark:bg-surface-dark-alt">
-	<div class="mx-auto max-w-6xl px-6 py-12">
+	<div class="mx-auto max-w-7xl px-6 py-12">
 		<!-- Top section: Logo -->
 		<div class="flex justify-center">
 			<!-- Logo -->
-			<a href="/" class="flex gap-5 items-center">
-				<img src={logoLeaf} alt="Growing Me logo" class="h-10 w-10 rounded-full" />
+			<a href="/" class="flex gap-2 items-center">
+				<img src={logoLeaf} alt="Growing Me logo" class="h-15 w-15" />
 				<span class="font-heading text-xl font-semibold text-gray-900 dark:text-gray-100"
 					>Growing Me</span
 				>
@@ -18,12 +18,12 @@
 		</div>
 
 		<!-- Green divider -->
-		<div class="mx-auto flex max-w-6xl px-6 my-4 h-[2px] bg-brand"></div>
+		<div class="mx-auto flex max-w-8xl px-6 my-4 h-[2px] bg-brand"></div>
 
 		<!-- Nav links -->
 		<div class="flex justify-center py-2">
 			<nav>
-				<ul class="flex items-center gap-4">
+				<ul class="flex items-center gap-5">
 					<li>
 						<a
 							href="/"

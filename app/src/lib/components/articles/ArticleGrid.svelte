@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PostMeta } from '$lib/utils/posts';
+	import type { PostMeta } from '../../utils/posts';
 	import ArticleCard from './ArticleCard.svelte';
 
 	let { posts }: { posts: PostMeta[] } = $props();

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Mail, MapPin } from 'lucide-svelte';
-	import SocialLinks from '../../../app/src/lib/components/shared/SocialLinks.svelte';
+	import SocialLinks from '$lib/components/shared/SocialLinks.svelte';
 </script>
 
 <svelte:head>

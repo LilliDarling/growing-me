@@ -1,5 +1,5 @@
 <script lang="ts">
-	import EmailSubscribe from '../../../../app/src/lib/components/shared/EmailSubscribe.svelte';
+	import EmailSubscribe from '../shared/EmailSubscribe.svelte';
 	import { BookOpen } from 'lucide-svelte';
 </script>
 

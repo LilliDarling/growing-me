@@ -3,6 +3,7 @@
 	import { Search, Menu, X } from 'lucide-svelte';
 	import SocialLinks from '$lib/components/shared/SocialLinks.svelte';
 	import ThemeToggle from '$lib/components/shared/ThemeToggle.svelte';
+	import leaf from '$lib/assets/logo-leaf.png'
 
 	let scrolled = $state(false);
 	let mobileOpen = $state(false);
@@ -37,9 +38,9 @@
 		: 'bg-white/80 backdrop-blur-sm dark:bg-surface-dark/60'}"
 >
 	<!-- Top row: Logo + Social -->
-	<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+	<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
 		<a href="/" class="flex items-center gap-3">
-			<img src="../assets/logo-leaf.png" alt="Growing Me logo" class="h-10 w-10 rounded-full" />
+			<img src="{leaf}" alt="Growing Me logo" class="h-10 w-10 rounded-full" />
 			<span class="font-heading text-xl font-semibold text-gray-900 dark:text-gray-700"
 				>Growing Me</span
 			>
@@ -66,11 +67,11 @@
 	</div>
 
 	<!-- Green divider -->
-	<div class="mx-auto flex max-w-6xl px-6 h-[2px] bg-brand"></div>
+	<div class="mx-auto flex max-w-7xl px-6 h-[2px] bg-brand"></div>
 
 	<!-- Bottom row: Nav links + Search (desktop) -->
 	<nav class="hidden md:block">
-		<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+		<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 			<ul class="flex items-center gap-8">
 				{#each navLinks as link}
 					<li>
