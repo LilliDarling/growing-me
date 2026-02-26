@@ -6,16 +6,16 @@
 	let { posts }: { posts: PostMeta[] } = $props();
 </script>
 
-<section class="bg-sage-300 dark:bg-surface-dark-alt">
+<section class="bg-surface-light-alt dark:bg-surface-dark pt-5 overflow-hidden">
 	<div class="relative w-full">
-		<svg 
-			viewBox="0 0 500 150" 
-			preserveAspectRatio="none" 
-			class="absolute top-0 left-0 w-full h-[200px] z-0"
+		<svg
+			viewBox="0 0 500 200"
+			preserveAspectRatio="none"
+			class="absolute inset-0 w-full h-full z-0"
 		>
-			<path 
-				d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" 
-				class="fill-surface-light-alt"
+			<path
+				d="M0,60 C150,160 350,-40 500,60 L500,170 C350,70 150,250 0,170 Z"
+				class="fill-sage-300"
 			></path>
 		</svg>
 		<div class="mx-auto max-w-6xl px-6 py-15 relative z-10">
@@ -26,15 +26,5 @@
 				{/each}
 			</div>
 		</div>
-		<svg 
-			viewBox="0 0 500 150" 
-			preserveAspectRatio="none" 
-			class="absolute bottom-0 left-0 w-full h-[200px] z-0 rotate-180"
-		>
-			<path 
-				d="M0,100 C150,200 350,0 500,100 L500,0 L0,0 Z" 
-				class="fill-surface-light-alt"
-			></path>
-		</svg>
 	</div>
 </section>

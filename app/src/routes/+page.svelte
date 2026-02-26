@@ -17,7 +17,7 @@
 </svelte:head>
 
 <Hero />
-<AboutSnippet />
 <FeaturedPosts posts={data.featuredPosts} />
 <QuoteSection />
+<AboutSnippet />
 <GallerySection />

@@ -13,13 +13,13 @@
 	<!-- Content -->
 	<div class="relative z-10 mx-auto max-w-4xl px-6 text-center">
 		<h1 class="font-heading text-4xl font-bold text-white md:text-5xl lg:text-6xl">
-			Embrace The Journey: Everything starts from a seed.
+			Cultivating the self, from the technical to the whimsical.
 		</h1>
 		<p class="mx-auto mt-6 max-w-2xl text-lg text-gray-200">
-			Cultivating the existence I only ever dreamed of having in my career.
+			A collection of insights on professional systems and personal evolution.
 		</p>
 		<div class="mt-8">
-			<Button href="/articles" variant="primary">Latest Posts</Button>
+			<Button href="/articles" variant="primary">Start the Journey</Button>
 		</div>
 	</div>
 </section>
