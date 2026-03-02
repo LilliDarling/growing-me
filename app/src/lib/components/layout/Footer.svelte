@@ -45,13 +45,6 @@
 							>About</a
 						>
 					</li>
-					<li>
-						<a
-							href="/contact"
-							class="text-sm text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
-							>Contact</a
-						>
-					</li>
 				</ul>
 			</nav>
 		</div>

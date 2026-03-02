@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { goto } from '$app/navigation';
 	import { Search, Menu, X } from 'lucide-svelte';
 	import SocialLinks from '$lib/components/shared/SocialLinks.svelte';
 	import ThemeToggle from '$lib/components/shared/ThemeToggle.svelte';
@@ -7,14 +8,20 @@
 
 	let scrolled = $state(false);
 	let mobileOpen = $state(false);
-	let searchOpen = $state(false);
 	let searchQuery = $state('');
+
+	function handleSearch() {
+		const q = searchQuery.trim();
+		if (q) {
+			goto(`/articles?q=${encodeURIComponent(q)}`);
+			mobileOpen = false;
+		}
+	}
 
 	const navLinks = [
 		{ href: '/', label: 'Home' },
 		{ href: '/articles', label: 'Articles' },
-		{ href: '/about', label: 'About' },
-		{ href: '/contact', label: 'Contact' }
+		{ href: '/about', label: 'About' }
 	];
 
 	function isActive(href: string, pathname: string): boolean {
@@ -98,6 +105,7 @@
 					type="text"
 					placeholder="Search"
 					bind:value={searchQuery}
+					onkeydown={(e) => e.key === 'Enter' && handleSearch()}
 					class="w-48 rounded-full border border-sage-300 bg-transparent py-1.5 pl-9 pr-4 text-sm text-gray-700 placeholder:text-gray-400 focus:border-brand focus:outline-none dark:border-sage-600 dark:text-gray-300 dark:placeholder:text-gray-500"
 				/>
 			</div>
@@ -142,6 +150,7 @@
 					type="text"
 					placeholder="Search"
 					bind:value={searchQuery}
+					onkeydown={(e) => e.key === 'Enter' && handleSearch()}
 					class="w-full rounded-full border border-sage-300 bg-transparent py-2 pl-9 pr-4 text-sm text-gray-700 placeholder:text-gray-400 focus:border-brand focus:outline-none dark:border-sage-600 dark:text-gray-300 dark:placeholder:text-gray-500"
 				/>
 			</div>

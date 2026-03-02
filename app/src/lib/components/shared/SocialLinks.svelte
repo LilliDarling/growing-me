@@ -1,35 +1,24 @@
 <script lang="ts">
-	import { Facebook, Instagram, Twitter } from 'lucide-svelte';
-
 	let { size = 20 }: { size?: number } = $props();
 </script>
 
 <div class="flex items-center gap-4">
 	<a
-		href="https://facebook.com"
+		href="https://facebook.com/lillith.long.2025"
 		target="_blank"
 		rel="noopener noreferrer"
 		class="text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
 		aria-label="Facebook"
 	>
-		<Facebook {size} />
+		<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
 	</a>
 	<a
-		href="https://instagram.com"
+		href="https://instagram.com/lillithcode"
 		target="_blank"
 		rel="noopener noreferrer"
 		class="text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
 		aria-label="Instagram"
 	>
-		<Instagram {size} />
-	</a>
-	<a
-		href="https://twitter.com"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
-		aria-label="Twitter"
-	>
-		<Twitter {size} />
+		<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M7.03.084c-1.277.06-2.149.264-2.913.558a5.884 5.884 0 0 0-2.126 1.384A5.855 5.855 0 0 0 .607 4.14c-.3.763-.5 1.636-.563 2.913C-.02 8.33-.014 8.82-.014 12s-.007 3.668.06 4.947c.06 1.277.264 2.149.558 2.913a5.884 5.884 0 0 0 1.384 2.126 5.868 5.868 0 0 0 2.123 1.384c.764.296 1.636.499 2.913.558 1.278.06 1.689.074 4.948.074s3.668.007 4.947-.06c1.277-.06 2.15-.264 2.913-.558a5.884 5.884 0 0 0 2.126-1.384 5.868 5.868 0 0 0 1.384-2.126c.296-.763.499-1.636.558-2.913.06-1.28.074-1.69.074-4.948s.007-3.668-.06-4.947c-.06-1.277-.264-2.149-.558-2.913a5.884 5.884 0 0 0-1.384-2.126A5.855 5.855 0 0 0 19.861.6c-.764-.3-1.636-.5-2.913-.563C15.67-.02 15.26-.014 12-.014s-3.668-.007-4.947.06zm.14 21.693c-1.17-.054-1.805-.249-2.228-.415a3.726 3.726 0 0 1-1.382-.895 3.726 3.726 0 0 1-.895-1.382c-.166-.423-.361-1.058-.415-2.228-.06-1.265-.072-1.644-.072-4.848s.013-3.584.072-4.849c.054-1.17.249-1.805.415-2.228.218-.561.48-.96.895-1.382a3.726 3.726 0 0 1 1.382-.895c.423-.166 1.058-.361 2.228-.415 1.265-.06 1.644-.072 4.849-.072s3.584.013 4.849.072c1.17.054 1.805.249 2.228.415.561.218.96.48 1.382.895.415.422.677.82.895 1.382.166.423.361 1.058.415 2.228.06 1.265.072 1.644.072 4.849s-.013 3.584-.072 4.848c-.054 1.17-.249 1.805-.415 2.228a3.726 3.726 0 0 1-.895 1.382 3.726 3.726 0 0 1-1.382.895c-.423.166-1.058.361-2.228.415-1.265.06-1.644.072-4.849.072s-3.584-.013-4.849-.072zm9.783-16.192a1.44 1.44 0 1 0 1.44-1.44 1.44 1.44 0 0 0-1.44 1.44zM5.838 12a6.162 6.162 0 1 0 12.324 0 6.162 6.162 0 0 0-12.324 0zM8 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/></svg>
 	</a>
 </div>
