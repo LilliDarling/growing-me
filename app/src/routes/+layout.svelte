@@ -2,6 +2,7 @@
 	import './app.css';
 	import Navbar from '$lib/components/layout/Navbar.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
+	import Ladybug from '$lib/components/shared/Ladybug.svelte';
 	import type { Snippet } from 'svelte';
 
 	let { children }: { children: Snippet } = $props();
@@ -14,4 +15,6 @@
 	</main>
 	<Footer />
 </div>
+
+<Ladybug />
 

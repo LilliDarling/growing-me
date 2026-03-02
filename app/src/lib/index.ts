@@ -13,3 +13,4 @@ export { default as SocialLinks } from './components/shared/SocialLinks.svelte';
 export { default as ImageWithBorder } from './components/shared/ImageWithBorder.svelte';
 export { default as ThemeToggle } from './components/shared/ThemeToggle.svelte';
 export { default as EmailSubscribe } from './components/shared/EmailSubscribe.svelte';
+export { default as Ladybug } from './components/shared/Ladybug.svelte';
