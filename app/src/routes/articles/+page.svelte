@@ -11,14 +11,14 @@
 	<meta name="description" content="Browse articles about software engineering, women in STEM, ADHD, and career growth." />
 </svelte:head>
 
-<div class="mx-auto max-w-6xl px-6 py-12">
-	<!-- Featured Article -->
-	{#if data.featured}
-		<section class="mb-16">
-			<FeaturedArticle post={data.featured} />
-		</section>
-	{/if}
+<!-- Featured Article - full width -->
+{#if data.featured}
+	<section class="mb-16">
+		<FeaturedArticle post={data.featured} />
+	</section>
+{/if}
 
+<div class="mx-auto max-w-6xl px-6 py-12">
 	<!-- Category Filter -->
 	<section class="mb-10">
 		<h2 class="mb-4 font-heading text-xl font-semibold text-gray-900 dark:text-gray-100">

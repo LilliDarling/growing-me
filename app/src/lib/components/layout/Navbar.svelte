@@ -33,8 +33,8 @@
 
 <header
 	class="sticky top-0 z-50 transition-all duration-300 {scrolled
-		? 'bg-white/75 shadow-sm backdrop-blur-sm dark:bg-surface-dark/60'
-		: 'bg-white/80 backdrop-blur-sm dark:bg-surface-dark/60'}"
+		? 'bg-white/75 shadow-sm backdrop-blur-sm dark:bg-surface-dark-alt/60'
+		: 'bg-white/80 backdrop-blur-sm dark:bg-surface-dark-alt/60'}"
 >
 	<!-- Top row: Logo + Social -->
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">

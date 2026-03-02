@@ -7,6 +7,7 @@ export interface PostMeta {
 	title: string;
 	date: string;
 	author: string;
+	description: string;
 	image: string;
 	category: string;
 	featured: boolean;
@@ -32,6 +33,7 @@ export function getAllPosts(): PostMeta[] {
 			title: data.title ?? '',
 			date: data.date ?? '',
 			author: data.author ?? 'Lilli',
+			description: data.description ?? '',
 			image: data.image ?? '',
 			category: data.category ?? '',
 			featured: data.featured ?? false,
@@ -53,6 +55,7 @@ export function getPostBySlug(slug: string): Post | null {
 			title: data.title ?? '',
 			date: data.date ?? '',
 			author: data.author ?? 'Lilli',
+			description: data.description ?? '',
 			image: data.image ?? '',
 			category: data.category ?? '',
 			featured: data.featured ?? false,
