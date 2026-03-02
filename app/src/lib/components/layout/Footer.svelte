@@ -4,7 +4,7 @@
 	import logoLeaf from '$lib/assets/logo-leaf.png';
 </script>
 
-<footer class="bg-surface-light-alt dark:bg-surface-dark-alt">
+<footer class="bg-surface-light dark:bg-surface-dark">
 	<div class="mx-auto max-w-7xl px-6 py-12">
 		<!-- Top section: Logo -->
 		<div class="flex justify-center">
@@ -33,13 +33,6 @@
 					</li>
 					<li>
 						<a
-							href="/about"
-							class="text-sm text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
-							>About</a
-						>
-					</li>
-					<li>
-						<a
 							href="/articles"
 							class="text-sm text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
 							>Articles</a
@@ -47,9 +40,9 @@
 					</li>
 					<li>
 						<a
-							href="/podcast"
+							href="/about"
 							class="text-sm text-gray-600 transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
-							>Podcast</a
+							>About</a
 						>
 					</li>
 					<li>

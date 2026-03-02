@@ -12,9 +12,8 @@
 
 	const navLinks = [
 		{ href: '/', label: 'Home' },
-		{ href: '/about', label: 'About' },
 		{ href: '/articles', label: 'Articles' },
-		{ href: '/podcast', label: 'Podcast' },
+		{ href: '/about', label: 'About' },
 		{ href: '/contact', label: 'Contact' }
 	];
 
@@ -41,7 +40,7 @@
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
 		<a href="/" class="flex items-center gap-3">
 			<img src="{leaf}" alt="Growing Me logo" class="h-10 w-10 rounded-full" />
-			<span class="font-heading text-xl font-semibold text-gray-900 dark:text-gray-700"
+			<span class="font-heading text-xl font-semibold"
 				>Growing Me</span
 			>
 		</a>
@@ -53,7 +52,7 @@
 			<ThemeToggle />
 			<!-- Mobile hamburger -->
 			<button
-				class="rounded-lg p-2 text-gray-600 md:hidden dark:text-gray-400"
+				class="rounded-lg p-2 md:hidden"
 				onclick={() => (mobileOpen = !mobileOpen)}
 				aria-label="Toggle menu"
 			>
@@ -82,7 +81,7 @@
 								page.url.pathname
 							)
 								? 'text-brand dark:text-sage-300'
-								: 'text-gray-600 hover:text-brand dark:text-gray-400 dark:hover:text-sage-300'}"
+								: 'hover:text-brand dark:hover:text-sage-300'}"
 						>
 							{link.label}
 						</a>

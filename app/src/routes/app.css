@@ -43,8 +43,8 @@
 		transition: background-color 0.2s, color 0.2s;
 	}
 
-	:global(.dark) body {
-		background-color: var(--color-surface-dark);
+	.dark body {
+		background-color: var(--color-surface-dark-alt);
 		color: #e5e5e5;
 	}
 
