@@ -1,0 +1,22 @@
+---
+title: "Your Article Title"
+date: "2026-03-02"
+author: "Lilli"
+description: "A short summary for SEO and article cards."
+image: "/selfie1.jpg"
+category: "Career Growth"
+featured: false
+---
+
+Article content goes here in regular markdown.
+
+## Subheadings work
+
+Regular paragraphs, **bold**, *italic*, [links](https://example.com).
+
+- Bullet lists
+- Work too
+
+> Blockquotes for emphasis
+
+![Inline images](/some-image.jpg)

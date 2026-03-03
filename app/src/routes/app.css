@@ -48,6 +48,17 @@
 		color: #e5e5e5;
 	}
 
+	/* Let inline styles on article images take precedence over prose defaults */
+	.prose img[style] {
+		margin-left: unset;
+		margin-right: unset;
+		max-width: unset;
+	}
+	.prose div[style] {
+		margin-left: unset;
+		margin-right: unset;
+	}
+
 	h1,
 	h2,
 	h3,
