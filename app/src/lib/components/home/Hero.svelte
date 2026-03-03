@@ -19,7 +19,7 @@
 			A collection of insights on professional systems and personal evolution.
 		</p>
 		<div class="mt-8">
-			<Button href="/articles" variant="primary">Start the Journey</Button>
+			<Button href="/articles" variant="primary" size="lg">Start the Journey</Button>
 		</div>
 	</div>
 </section>

@@ -2,14 +2,15 @@
 	import FeaturedArticle from '$lib/components/articles/FeaturedArticle.svelte';
 	import CategoryFilter from '$lib/components/articles/CategoryFilter.svelte';
 	import ArticleGrid from '$lib/components/articles/ArticleGrid.svelte';
+	import SEO from '$lib/components/shared/SEO.svelte';
 
 	let { data } = $props();
 </script>
 
-<svelte:head>
-	<title>Articles - Growing Me</title>
-	<meta name="description" content="Browse articles about software engineering, women in STEM, ADHD, and career growth." />
-</svelte:head>
+<SEO
+	title="Articles"
+	description="Browse articles about software engineering, women in STEM, ADHD, and career growth."
+/>
 
 <!-- Featured Article - full width -->
 {#if data.featured}

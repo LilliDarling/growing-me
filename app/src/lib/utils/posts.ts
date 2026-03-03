@@ -1,5 +1,6 @@
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import DOMPurify from 'isomorphic-dompurify';
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
@@ -60,7 +61,7 @@ export function getPostBySlug(slug: string): Post | null {
 			category: data.category ?? '',
 			featured: data.featured ?? false,
 			slug,
-			content: marked(content) as string
+			content: DOMPurify.sanitize(marked(content) as string)
 		};
 	} catch {
 		return null;

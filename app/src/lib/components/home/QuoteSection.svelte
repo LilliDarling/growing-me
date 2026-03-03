@@ -12,7 +12,7 @@
 					~ Lewis Carroll
 				</cite>
 			</footer>
-			<img src={bug} alt="" class="absolute -bottom-4 -left-10" style="width: 200px">
+			<img src={bug} alt="" class="absolute w-[100px] left-40 md:-bottom-4 md:-left-10 md:w-[200px]">
 		</blockquote>
 	</div>
 </section>

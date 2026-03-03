@@ -1,4 +1,4 @@
-  {
+{
 	"name": "app",
 	"private": true,
 	"version": "0.0.1",
@@ -54,6 +54,7 @@
 	},
 	"dependencies": {
 		"gray-matter": "^4.0.3",
+		"isomorphic-dompurify": "^3.0.0",
 		"lucide-svelte": "^0.574.0",
 		"marked": "^17.0.3"
 	}

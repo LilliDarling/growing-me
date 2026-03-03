@@ -4,15 +4,22 @@
 	let {
 		href = '',
 		variant = 'primary',
+		size = 'default',
 		children
 	}: {
 		href?: string;
 		variant?: 'primary' | 'secondary';
+		size?: 'default' | 'lg';
 		children: Snippet;
 	} = $props();
 
 	const baseClasses =
-		'inline-flex items-center justify-center rounded-full px-4 py-1 text-sm font-semibold transition-all duration-200';
+		'inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200';
+
+	const sizeClasses = {
+		default: 'px-4 py-1 text-sm',
+		lg: 'px-8 py-3 text-lg'
+	};
 
 	const variantClasses = {
 		primary:
@@ -23,11 +30,11 @@
 </script>
 
 {#if href}
-	<a {href} class="{baseClasses} {variantClasses[variant]}">
+	<a {href} class="{baseClasses} {sizeClasses[size]} {variantClasses[variant]}">
 		{@render children()}
 	</a>
 {:else}
-	<button class="{baseClasses} {variantClasses[variant]}">
+	<button class="{baseClasses} {sizeClasses[size]} {variantClasses[variant]}">
 		{@render children()}
 	</button>
 {/if}

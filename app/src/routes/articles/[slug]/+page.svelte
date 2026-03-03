@@ -1,14 +1,18 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils/format-date.js';
+	import SEO from '$lib/components/shared/SEO.svelte';
 
 	let { data } = $props();
 	let post = $derived(data.post);
 </script>
 
-<svelte:head>
-	<title>{post.title} - Growing Me</title>
-	<meta name="description" content="{post.title} by {post.author}" />
-</svelte:head>
+<SEO
+	title={post.title}
+	description={post.description || `${post.title} by ${post.author}`}
+	image={post.image || '/selfie1.jpg'}
+	type="article"
+	article={{ author: post.author, date: post.date, category: post.category }}
+/>
 
 <article class="md:grid md:grid-cols-[1.5fr_4fr]">
 	<!-- Left column: sticky metadata -->

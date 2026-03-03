@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SocialLinks from '../shared/SocialLinks.svelte';
 	import EmailSubscribe from '$lib/components/shared/EmailSubscribe.svelte';
-	import logoLeaf from '$lib/assets/logo-leaf.png';
+	import bug from '$lib/assets/ladybug.svg';
 </script>
 
 <footer class="bg-surface-light dark:bg-surface-dark">
@@ -9,8 +9,8 @@
 		<!-- Top section: Logo -->
 		<div class="flex justify-center">
 			<!-- Logo -->
-			<a href="/" class="flex gap-2 items-center">
-				<img src={logoLeaf} alt="Growing Me logo" class="h-15 w-15" />
+			<a href="/" class="flex items-end">
+				<img src={bug} alt="Growing Me logo" class="h-20 w-20" />
 				<span class="font-heading text-xl font-semibold text-gray-900 dark:text-gray-100"
 					>Growing Me</span
 				>

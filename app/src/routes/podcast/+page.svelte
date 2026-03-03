@@ -1,12 +1,13 @@
 <script lang="ts">
 	import PodcastCard from '$lib/components/podcast/PodcastCard.svelte';
 	import { Mic } from 'lucide-svelte';
+	import SEO from '$lib/components/shared/SEO.svelte';
 </script>
 
-<svelte:head>
-	<title>Podcast - Growing Me</title>
-	<meta name="description" content="Listen to the Growing Me podcast." />
-</svelte:head>
+<SEO
+	title="Podcast"
+	description="Listen to the Growing Me podcast — conversations about growth, career, and everything in between."
+/>
 
 <div class="mx-auto max-w-4xl px-6 py-16">
 	<div class="text-center">

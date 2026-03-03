@@ -5,6 +5,7 @@
 	import SocialLinks from '$lib/components/shared/SocialLinks.svelte';
 	import ThemeToggle from '$lib/components/shared/ThemeToggle.svelte';
 	import leaf from '$lib/assets/logo-leaf.png'
+	import bug from '$lib/assets/ladybug.svg';
 
 	let scrolled = $state(false);
 	let mobileOpen = $state(false);
@@ -44,9 +45,9 @@
 		: 'bg-white/80 backdrop-blur-sm dark:bg-surface-dark-alt/60'}"
 >
 	<!-- Top row: Logo + Social -->
-	<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
-		<a href="/" class="flex items-center gap-3">
-			<img src="{leaf}" alt="Growing Me logo" class="h-10 w-10 rounded-full" />
+	<div class="mx-auto flex max-w-7xl items-end justify-between px-6 pb-3">
+		<a href="/" class="flex items-end">
+			<img src="{bug}" alt="Growing Me logo" class="h-20 w-20 rounded-full" />
 			<span class="font-heading text-xl font-semibold"
 				>Growing Me</span
 			>

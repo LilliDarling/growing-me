@@ -4,17 +4,15 @@
 	import FeaturedPosts from '$lib/components/home/FeaturedPosts.svelte';
 	import QuoteSection from '$lib/components/home/QuoteSection.svelte';
 	import GallerySection from '$lib/components/home/GallerySection.svelte';
+	import SEO from '$lib/components/shared/SEO.svelte';
 
 	let { data } = $props();
 </script>
 
-<svelte:head>
-	<title>Growing Me - Embrace The Journey</title>
-	<meta
-		name="description"
-		content="Cultivating the existence I only ever dreamed of having in my career. Articles about software engineering, women in STEM, ADHD, and career growth."
-	/>
-</svelte:head>
+<SEO
+	title="Growing Me"
+	description="Cultivating the existence I only ever dreamed of having in my career. Articles about software engineering, women in STEM, ADHD, and career growth."
+/>
 
 <Hero />
 <FeaturedPosts posts={data.featuredPosts} />
