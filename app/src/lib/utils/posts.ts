@@ -1,6 +1,6 @@
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import DOMPurify from 'isomorphic-dompurify';
+import sanitizeHtml from 'sanitize-html';
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
@@ -61,7 +61,13 @@ export function getPostBySlug(slug: string): Post | null {
 			category: data.category ?? '',
 			featured: data.featured ?? false,
 			slug,
-			content: DOMPurify.sanitize(marked(content) as string)
+			content: sanitizeHtml(marked(content) as string, {
+				allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img', 'h1', 'h2']),
+				allowedAttributes: {
+					...sanitizeHtml.defaults.allowedAttributes,
+					img: ['src', 'alt', 'title', 'width', 'height', 'loading']
+				}
+			})
 		};
 	} catch {
 		return null;
