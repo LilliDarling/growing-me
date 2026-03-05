@@ -16,6 +16,8 @@ For years, I treated my career like a ladder I was failing to climb. I moved fro
 
 I was trying to force a vine to grow like a beanstalk. And like any plant forced into the wrong shape, I was withering.
 
+---
+
 ## The Ecology of Experience
 
 On my About page, I describe my path as a wild vine. It twists, turns, and occasionally tangles. But here is the secret I've learned since rooting myself in technology: those tangles weren't mistakes. They were nutrients.
@@ -32,6 +34,8 @@ Now, as a software engineer, I don't just write code; I understand the human eco
   <img src="/stone-steps.jpg" alt="description" style="display: inline-block; width: 1000px; max-width: 100%; height: 450px; object-fit: cover; border-radius: 12px"/>
 </div>
 
+---
+
 ## Reframing Restlessness
 
 For my fellow non-linear thinkers—especially those navigating neurodivergence like ADHD or AuDHD—this restlessness often feels like a defect.
@@ -44,6 +48,8 @@ A garden doesn't grow in a straight line. It responds to the light. It shifts wi
 
 When I was diagnosed with ADHD/AuDHD, it wasn't a label of limitation; it was an explanation of my ecology. My brain isn't broken; it's just wired to seek new light sources. Recognizing this allowed me to stop fighting my own nature and start working with it.
 
+---
+
 ## Invitation to Grow
 
 This blog, **Growing Me**, is not about finding the perfect straight path. It's about learning to tend to your own unique ecosystem.
@@ -54,6 +60,8 @@ Whether you are pivoting into tech, managing a neurodivergent mind in a neurotyp
 
 Look around at your own vine. Where is it reaching for light? That's where you need to grow.
 
+---
+
 ## Let's Get to Work
 
 Growth is rarely a straight line, and neither is belonging. Sometimes the soil is poor, and sometimes you realize you were planted in the wrong pot entirely. But if you are willing to put down roots and grow, you will find your place.
@@ -62,4 +70,6 @@ Don't shrink to fit the room. Let your growth expand the room. You belong here.
 
 Now, let's get to work.
 
-🌱 *Over to You: Where has your career vine taken you unexpectedly? Have you ever felt punished for growing outward instead of upward? Share your story on social media and tag me—I'd love to hear how you're growing.*
+---
+
+🌱 Over to You: *Where has your career vine taken you unexpectedly? Have you ever felt punished for growing outward instead of upward? Share your story in the comments—I'd love to hear how you're growing.*

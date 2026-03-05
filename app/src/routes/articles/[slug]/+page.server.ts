@@ -9,5 +9,5 @@ export const load: PageServerLoad = async ({ params }) => {
 		throw error(404, 'Article not found');
 	}
 
-	return { post };
+	return { post, slug: params.slug };
 };

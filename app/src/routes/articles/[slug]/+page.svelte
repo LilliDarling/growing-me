@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils/format-date.js';
 	import SEO from '$lib/components/shared/SEO.svelte';
+	import CommentSection from '$lib/components/articles/CommentSection.svelte';
 
 	let { data } = $props();
 	let post = $derived(data.post);
+	let slug = $derived(data.slug);
 </script>
 
 <SEO
@@ -16,7 +18,7 @@
 
 <article class="md:grid md:grid-cols-[1.5fr_4fr]">
 	<!-- Left column: sticky metadata -->
-	<div class="px-6 py-12 md:sticky md:top-30 md:h-fit md:py-8">
+	<div class="px-6 py-12 md:sticky md:top-30 md:h-fit md:py-20">
 		<a
 			href="/articles"
 			class="text-sm font-medium text-brand transition-colors hover:text-brand-light dark:text-sage-300 dark:hover:text-sage-200"
@@ -56,6 +58,9 @@
 		>
 			{@html post.content}
 		</div>
+
+		<!-- Comments -->
+		<CommentSection {slug} />
 
 		<!-- Back link -->
 		<div class="mt-12 border-t border-sage-200 pt-8 dark:border-sage-700">

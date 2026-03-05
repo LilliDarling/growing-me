@@ -23,9 +23,9 @@
 
 	const variantClasses = {
 		primary:
-			'border-2 border-blue-800 bg-blue-300 hover:bg-blue-800 hover:text-white',
+			'border-2 border-blue-800 bg-blue-300 hover:bg-blue-800 hover:text-white dark:text-black',
 		secondary:
-			'bg-blue-800 text-white hover:bg-blue-300 hover:text-black'
+			'bg-blue-800 text-white hover:bg-blue-300 hover:text-black dark:text-black'
 	};
 </script>
 
