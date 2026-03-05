@@ -56,7 +56,7 @@
 			>
 				{loading ? 'Sending...' : 'Subscribe'}
 			</button>
-			<img src={leaf} alt="" class="absolute -right-19 -bottom-28 z-0" style="width: 200px" />
+			<img src={leaf} alt="" class="absolute -right-10 -bottom-18 w-[150px] md:-right-19 md:-bottom-28 md:w-[200px] z-0" />
 		</div>
 		{#if error}
 			<p class="mt-2 text-xs text-red-500">{error}</p>
