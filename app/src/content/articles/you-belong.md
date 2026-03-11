@@ -1,9 +1,9 @@
 ---
 title: "You Belong in the Room: Overcoming the 'Wrong Pot' Syndrome"
-date: "2026-03-05"
+date: "2026-03-11"
 author: "Lilli"
-description: "truggling with imposter syndrome? Learn why your non-linear path is your strength and how to overcome the feeling you don't belong. You're exactly where you need to be."
-image: "/manitou-incline.jpg"
+description: "Struggling with imposter syndrome? Learn why your non-linear path is your strength and how to overcome the feeling you don't belong. You're exactly where you need to be."
+image: "/stump.jpg"
 category: "Mindset"
 featured: true
 ---
@@ -26,6 +26,10 @@ But true belonging isn't about fitting into a mold; it's about bringing your who
 
 When I transitioned from sales to software engineering, I felt like I was leaving my "real" skills behind. I thought belonging in tech meant acting like I had only ever done tech. I hid my sales background. I minimized my time in kitchens. I tried to shrink myself to fit the stereotype of what an engineer "looks like."
 
+<div style="text-align: center">
+  <img src="/outgrowth.png" alt="description" style="display: inline-block; width: 600px; max-width: 100%; height: 450px; object-fit: cover; border-radius: 12px"/>
+</div>
+
 But a plant doesn't shrink to fit the pot. If the roots get too tight, the pot breaks. That breaking isn't destruction; it's growth demanding space.
 
 ---
@@ -39,6 +43,10 @@ I used to wait until I felt "qualified" to speak up in meetings. I waited until 
 Now I know that my perspective—shaped by those detours through sales and hospitality—is exactly what the room needs. When I explain a technical constraint to a product manager, I'm not just quoting documentation. I'm drawing on years of hearing customers say, "I don't understand why this doesn't work."
 
 Your worth isn't defined by a degree or a linear timeline. It's defined by your willingness to cultivate your potential and share it.
+
+<div style="text-align: center">
+  <img src="/tinyWorld.jpg" alt="description" style="display: inline-block; width: 700px; max-width: 100%; height: 450px; object-fit: cover; border-radius: 12px"/>
+</div>
 
 ---
 
@@ -62,8 +70,6 @@ But if you are willing to put down roots and grow, you will find your place.
 
 Don't shrink to fit the room. Let your growth expand the room. You belong here.
 
-Now, let's get to work.
-
 ---
 
-🌱 Over to You: *When was the last time you felt you didn't belong in a professional space? What helped you ground yourself? Share your experience in the comments—I read every one.*
+🌱 Over to You: *When was the last time you felt you didn't belong in a professional space or really any space? What helped you ground yourself? Share your experience in the comments—I read every one.*
