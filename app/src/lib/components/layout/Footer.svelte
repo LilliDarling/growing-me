@@ -59,9 +59,14 @@
 			class="mt-8 flex flex-col items-center gap-4 pt-4 dark:border-sage-700"
 		>
 			<SocialLinks size={18} />
-			<p class="text-xs text-gray-500 dark:text-gray-500 py-3">
-				&copy; {new Date().getFullYear()} Growing Me. All rights reserved.
-			</p>
+			<div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-500 py-3">
+				<p>&copy; {new Date().getFullYear()} Growing Me. All rights reserved.</p>
+				<span class="text-gray-300 dark:text-sage-700">|</span>
+				<a
+					href="/wildbloom"
+					class="text-gray-600 underline transition-colors hover:text-brand dark:text-gray-400 dark:hover:text-sage-300"
+				>Wildbloom</a>
+			</div>
 		</div>
 	</div>
 </footer>
