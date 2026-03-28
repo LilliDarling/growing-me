@@ -61,7 +61,7 @@ The trick is matching the task to the state. Not forcing the state to match the 
 ---
 
 <div style="text-align: center;">
-  <img src="/hecate.jpg" alt="Hecate napping, unbothered and free because, as a cat, she follows her energy patterns and not the to-do list" style="display: inline-block; width: 600px; max-width: 100%; height: 650px; object-fit: cover; border-radius: 12px;"/>
+  <img src="/hecate.jpg" alt="Hecate napping, unbothered and free because, as a cat, she follows her energy patterns and not the to-do list" style="display: inline-block; width: 100%; max-width: 600px; aspect-ratio: 600/650; object-fit: cover; border-radius: 12px;"/>
   <div style="font-style: italic; color: #666; margin-top: -15px; font-size: 0.9em;">
     She has never once felt guilty about a low-energy stretch.
   </div>

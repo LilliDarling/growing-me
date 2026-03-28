@@ -63,7 +63,7 @@
 		<CommentSection {slug} />
 
 		<!-- Back link -->
-		<div class="mt-12 border-t border-sage-200 pt-8 dark:border-sage-700">
+		<div class="mt-12 border-t border-sage-200 py-4 dark:border-sage-700">
 			<a
 				href="/articles"
 				class="text-sm font-medium text-brand transition-colors hover:text-brand-light dark:text-sage-300 dark:hover:text-sage-200"

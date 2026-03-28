@@ -27,7 +27,7 @@ But true belonging isn't about fitting into a mold; it's about bringing your who
 When I transitioned from sales to software engineering, I felt like I was leaving my "real" skills behind. I thought belonging in tech meant acting like I had only ever done tech. I hid my sales background. I minimized my time in kitchens. I tried to shrink myself to fit the stereotype of what an engineer "looks like."
 
 <div style="text-align: center">
-  <img src="/outgrowth.png" alt="description" style="display: inline-block; width: 600px; max-width: 100%; height: 450px; object-fit: cover; border-radius: 12px"/>
+  <img src="/outgrowth.png" alt="description" style="display: inline-block; width: 100%; max-width: 600px; aspect-ratio: 600/450; object-fit: cover; border-radius: 12px"/>
 </div>
 
 But a plant doesn't shrink to fit the pot. If the roots get too tight, the pot breaks. That breaking isn't destruction; it's growth demanding space.

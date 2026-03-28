@@ -45,9 +45,9 @@
 		: 'bg-white/80 backdrop-blur-sm dark:bg-surface-dark-alt/60'}"
 >
 	<!-- Top row: Logo + Social -->
-	<div class="mx-auto flex max-w-7xl items-end justify-between px-6 pb-3">
+	<div class="mx-auto flex max-w-7xl items-end justify-between px-6 pb-3 mt-2">
 		<a href="/" class="flex items-end">
-			<img src="{bug}" alt="Growing Me logo" class="h-20 w-20 rounded-full" />
+			<img src="{bug}" alt="Growing Me logo" class="h-10 w-15 rounded-full" />
 			<span class="font-heading text-xl font-semibold"
 				>Growing Me</span
 			>
@@ -78,7 +78,7 @@
 
 	<!-- Bottom row: Nav links + Search (desktop) -->
 	<nav class="hidden md:block">
-		<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+		<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
 			<ul class="flex items-center gap-8">
 				{#each navLinks as link}
 					<li>

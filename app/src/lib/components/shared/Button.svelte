@@ -18,12 +18,12 @@
 
 	const sizeClasses = {
 		default: 'px-4 py-1 text-sm',
-		lg: 'px-8 py-3 text-lg'
+		lg: 'px-6 py-2 text-lg'
 	};
 
 	const variantClasses = {
 		primary:
-			'border-2 border-blue-800 bg-blue-300 hover:bg-blue-800 hover:text-white dark:text-black',
+			'border-2 border-blue-800 bg-blue-300/70 hover:bg-blue-800/50 hover:text-white dark:text-black',
 		secondary:
 			'bg-blue-800 text-white hover:bg-blue-300 hover:text-black dark:text-black'
 	};
