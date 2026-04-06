@@ -34,6 +34,7 @@
 						<img
 							src={post.image}
 							alt={post.title}
+							decoding="async"
 							class="aspect-[3/2] w-full rounded-xl object-cover shadow-lg"
 						/>
 					{:else}

@@ -1,12 +1,12 @@
 import type { RequestHandler } from './$types';
 import { getAllPosts } from '$lib/utils/posts';
 
-const siteUrl = 'https://growingme.dev';
+const siteUrl = 'https://growingme.co';
 
 export const GET: RequestHandler = async () => {
 	const posts = getAllPosts();
 
-	const staticPages = ['', '/articles', '/about', '/podcast'];
+	const staticPages = ['', '/articles', '/about', '/podcast', '/wildbloom'];
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

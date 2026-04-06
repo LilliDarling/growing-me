@@ -22,6 +22,34 @@
 	let canonicalUrl = $derived(`${siteUrl}${page.url.pathname}`);
 	let ogImage = $derived(image.startsWith('http') ? image : `${siteUrl}${image}`);
 
+	let breadcrumbLd = $derived(
+		article
+			? JSON.stringify({
+					'@context': 'https://schema.org',
+					'@type': 'BreadcrumbList',
+					itemListElement: [
+						{
+							'@type': 'ListItem',
+							position: 1,
+							name: 'Home',
+							item: siteUrl
+						},
+						{
+							'@type': 'ListItem',
+							position: 2,
+							name: 'Articles',
+							item: `${siteUrl}/articles`
+						},
+						{
+							'@type': 'ListItem',
+							position: 3,
+							name: title
+						}
+					]
+				})
+			: null
+	);
+
 	let jsonLd = $derived(
 		article
 			? JSON.stringify({
@@ -80,4 +108,7 @@
 
 	<!-- Structured Data -->
 	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	{#if breadcrumbLd}
+		{@html `<script type="application/ld+json">${breadcrumbLd}</script>`}
+	{/if}
 </svelte:head>

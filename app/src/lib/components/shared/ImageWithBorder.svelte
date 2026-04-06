@@ -15,6 +15,8 @@
 	<img
 		{src}
 		{alt}
+		loading="lazy"
+		decoding="async"
 		class="relative z-10 rounded-lg object-cover"
 	/>
 </div>

@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://growingme.dev/sitemap.xml
+Sitemap: https://growingme.co/sitemap.xml

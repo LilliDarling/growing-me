@@ -48,7 +48,7 @@
 		<!-- Hero image -->
 		{#if post.image}
 			<div class="mb-10 aspect-[14/7] shadow-xl/40 overflow-hidden rounded-4xl bg-sage-100 dark:bg-sage-800">
-				<img src={post.image} alt={post.title} class="h-full w-full object-cover" />
+				<img src={post.image} alt={post.title} decoding="async" class="h-full w-full object-cover" />
 			</div>
 		{/if}
 

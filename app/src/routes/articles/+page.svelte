@@ -12,6 +12,8 @@
 	description="Browse articles about software engineering, women in STEM, ADHD, and career growth."
 />
 
+<h1 class="sr-only">Articles</h1>
+
 <!-- Featured Article - full width -->
 {#if data.featured}
 	<section class="mb-16">
