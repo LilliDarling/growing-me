@@ -6,7 +6,16 @@ const siteUrl = 'https://growingme.co';
 export const GET: RequestHandler = async () => {
 	const posts = getAllPosts();
 
-	const staticPages = ['', '/articles', '/about', '/podcast', '/wildbloom'];
+	const staticPages = [
+		'',
+		'/articles',
+		'/about',
+		'/podcast',
+		'/wildbloom',
+		'/worksheets',
+		'/worksheets/cognitive-load-tiers',
+		'/rss.xml'
+	];
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

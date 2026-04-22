@@ -2,6 +2,7 @@
 	import { formatDate } from '$lib/utils/format-date.js';
 	import SEO from '$lib/components/shared/SEO.svelte';
 	import CommentSection from '$lib/components/articles/CommentSection.svelte';
+	import CognitiveLoadWorksheet from '$lib/components/shared/CognitiveLoadWorksheet.svelte';
 
 	let { data } = $props();
 	let post = $derived(data.post);
@@ -58,6 +59,10 @@
 		>
 			{@html post.content}
 		</div>
+
+		{#if slug === 'seasons-of-silence'}
+			<CognitiveLoadWorksheet />
+		{/if}
 
 		<!-- Comments -->
 		<CommentSection {slug} />

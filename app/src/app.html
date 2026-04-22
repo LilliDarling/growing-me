@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="alternate" type="application/rss+xml" title="Growing Me" href="/rss.xml" />
 		<meta name="theme-color" content="#186733" media="(prefers-color-scheme: light)" />
 		<meta name="theme-color" content="#393A39" media="(prefers-color-scheme: dark)" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,12 +13,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Princess+Sofia&display=swap"
 			rel="stylesheet"
 		/>
-		<script>
-			const theme =
-				localStorage.getItem('theme') ??
-				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-			document.documentElement.classList.toggle('dark', theme === 'dark');
-		</script>
+		<script src="/theme-init.js"></script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
