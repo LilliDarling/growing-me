@@ -33,8 +33,12 @@ export const GET: RequestHandler = async () => {
 		.map((post) => {
 			const url = `${siteUrl}/articles/${post.slug}`;
 			const pubDate = new Date(post.date).toUTCString();
+			const imageUrl = post.image
+				? escapeXml(post.image.startsWith('http') ? post.image : `${siteUrl}${post.image}`)
+				: '';
+			const imageMime = post.image ? imageMimeType(post.image) : '';
 			const imageTag = post.image
-				? `    <enclosure url="${escapeXml(post.image.startsWith('http') ? post.image : `${siteUrl}${post.image}`)}" type="${imageMimeType(post.image)}" />`
+				? `    <enclosure url="${imageUrl}" type="${imageMime}" />\n    <media:content url="${imageUrl}" medium="image" type="${imageMime}" />\n    <media:thumbnail url="${imageUrl}" />`
 				: '';
 			const categoryTag = post.category
 				? `    <category>${escapeXml(post.category)}</category>`
@@ -53,7 +57,7 @@ ${[categoryTag, imageTag].filter(Boolean).join('\n')}
 		.join('\n');
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
   <title>${escapeXml(siteName)}</title>
   <link>${siteUrl}</link>
